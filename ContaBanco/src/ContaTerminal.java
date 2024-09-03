@@ -8,19 +8,19 @@ public class ContaTerminal {
         //Criando o objeto Scanner.
         Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
 
-        System.out.println("Digite o seu nome: ");
+        System.out.println("Por favor, digite o seu nome: ");
         String nome = scanner.next();
 
-        System.out.println("Digite o seu sobrenome: ");
+        System.out.println("Por favor, digite o seu sobrenome: ");
         String sobrenome = scanner.next();
 
-        System.out.println("Digite a agência: ");
+        System.out.println("Por favor, digite a agência: ");
         String agencia = scanner.next();
         
-        System.out.println("Digite o nùmero da conta: ");
+        System.out.println("Por favor, digite o nùmero da conta: ");
         int conta = scanner.nextInt();
 
-        System.out.println("Digite seu saldo: ");
+        System.out.println("Por favor, digite seu saldo: ");
         double saldo = scanner.nextDouble();
 
         System.out.println("Seu nome é: " + nome + " " + sobrenome);
