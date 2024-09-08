@@ -12,5 +12,9 @@ public class Contador{
 
         System.out.println("Digite o segundo Número: ");
         parametroDois = terminal.nextInt();
+
+        try{
+
+        }catch
     }
 }
