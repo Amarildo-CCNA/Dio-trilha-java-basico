@@ -1,20 +1,34 @@
 import java.util.Scanner;
 
-public class Contador{
-    public static void main(String[] args) throws Exception {
-        Scanner terminal = new Scanner(System.in);
+public class Contador {
+    public static void main(String[] args) {
 
-        int parametroUm   = terminal.nextInt();
+	
+        Scanner terminal = new Scanner(System.in);
+        System.out.println("Digite o primeiro parâmetro: ");
+        int parametroUm = terminal.nextInt();
+        System.out.println("Digite o segundo parâmetro: ");
         int parametroDois = terminal.nextInt();
 
-        System.out.println("Digite o primeiro Número: ");
-        parametroUm = terminal.nextInt();
+	try{
+            contar(parametroUm, parametroDois);
+	
+        }catch (ParametrosInvalidosException e){
+            System.out.println("O segundo parâmetro deve ser maior que o primeiro");
+            
+        }
+    }
 
-        System.out.println("Digite o segundo Número: ");
-        parametroDois = terminal.nextInt();
+    static void contar(Integer parametroUm, Integer parametroDois) throws ParametrosInvalidosException{
 
-        try{
+        if(parametroUm >= parametroDois){
+             throw new ParametrosInvalidosException();
+        }
 
-        }catch
+        Integer contagem = parametroDois - parametroUm;
+
+        for(int i = 1; i <= contagem; i ++){
+            System.out.println("Imprimindo o ciclo de contagem: " + i);
+        }
     }
 }
