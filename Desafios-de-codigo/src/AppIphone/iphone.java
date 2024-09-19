@@ -59,10 +59,7 @@ public class iphone implements internetBrowser, musicPlayer, phoneDevice {
 		iphone device = new iphone();
 		int opcao;
 		do {
-			System.out.println("Selecione uma opção no menu: \n +" + "1: Efetuar ligação \n +"
-					+ "2: Atender ligação \n +" + "3: Iniciar correio de voz \n +" + "4: Selecionar música \n +"
-					+ "5: Tocar música \n +" + "6: Pausar música \n +" + "7: Exibir página no navegador \n +"
-					+ "8: Abrir nova aba no navegador \n +" + "9: Atualizar página no navegador \n +" + "0: Desligar");
+			System.out.println("Selecione uma opção no menu: \n 1: Efetuar ligação \n 2: Atender ligação \n 3: Iniciar correio de voz \n 4: Selecionar música \n 5: Tocar música \n 6: Pausar música \n 7: Exibir página no navegador \n 8: Abrir nova aba no navegador \n 9: Atualizar página no navegador \n 0: Desligar");
 
 			opcao = scanner.nextInt();
 
