@@ -1,4 +1,4 @@
-package Application;
+package AppIphone;
 
 import java.util.Scanner;
 
@@ -56,7 +56,7 @@ public class iphone implements internetBrowser, musicPlayer, phoneDevice {
 
 	public static void main(String[] args) throws InterruptedException {
 		Scanner scanner = new Scanner(System.in);
-		Iphone iphone = new Iphone();
+		iphone device = new iphone();
 		int opcao;
 		do {
 			System.out.println("Selecione uma opção no menu: \n +" + "1: Efetuar ligação \n +"
@@ -68,39 +68,39 @@ public class iphone implements internetBrowser, musicPlayer, phoneDevice {
 
 			switch (opcao) {
 			case 1:
-				iphone.ligar();
+				device.fazerLigacao();
 				Thread.sleep(1000);
 				break;
 			case 2:
-				iphone.atender();
+				device.atenderLigacao();
 				Thread.sleep(1000);
 				break;
 			case 3:
-				iphone.iniciarCorreioVoz();
+				device.iniciarCorreioVoz();
 				Thread.sleep(1000);
 				break;
 			case 4:
-				iphone.selecionarMusica();
+				device.selecionarMusica();
 				Thread.sleep(1000);
 				break;
 			case 5:
-				iphone.tocar();
+				device.tocarMusica();
 				Thread.sleep(1000);
 				break;
 			case 6:
-				iphone.pausar();
+				device.pausarMusica();
 				Thread.sleep(1000);
 				break;
 			case 7:
-				iphone.exibirPagina();
+				device.exibirPagina();
 				Thread.sleep(1000);
 				break;
 			case 8:
-				iphone.adicionarNovaAba();
+				device.adicionarNovaAba();
 				Thread.sleep(1000);
 				break;
 			case 9:
-				iphone.atualizarPagina();
+				device.atualizarPagina();
 				Thread.sleep(1000);
 				break;
 			case 0:
